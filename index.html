@@ -8,7 +8,7 @@
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
 
-<title>Sukhada Raut Foods</title>
+<title>Sukhada Raut Foods | Fresh Frozen Grated Coconut</title>
 
 <meta name="description"
       content="Sukhada Raut Foods - Fresh Frozen Grated Coconut - 100% Natural - The Pride of Goa">
@@ -16,7 +16,7 @@
 <style>
 
 /* =====================================================
-   BASIC
+   GLOBAL
 ===================================================== */
 
 * {
@@ -44,21 +44,28 @@ body {
 
 img {
     max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
 }
 
 
 /* =====================================================
-   CONTAINER
+   MAIN CONTAINER
 ===================================================== */
 
 .container {
+
     width: 100%;
 
-    max-width: 1150px;
+    max-width: 1200px;
 
     margin: 0 auto;
 
     padding-left: 20px;
+
     padding-right: 20px;
 }
 
@@ -68,6 +75,7 @@ img {
 ===================================================== */
 
 .header {
+
     background: #ffffff;
 
     position: sticky;
@@ -76,7 +84,8 @@ img {
 
     z-index: 1000;
 
-    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    box-shadow:
+        0 2px 12px rgba(0,0,0,0.10);
 }
 
 .header-inner {
@@ -110,9 +119,9 @@ img {
 
 .nav a {
 
-    text-decoration: none;
-
     color: #172033;
+
+    text-decoration: none;
 
     font-weight: 600;
 }
@@ -124,7 +133,7 @@ img {
 
 
 /* =====================================================
-   VIDEO SECTION
+   VIDEO
 ===================================================== */
 
 .video-section {
@@ -152,9 +161,6 @@ img {
     color: #5d6670;
 }
 
-
-/* VIDEO */
-
 .video-box {
 
     width: 100%;
@@ -163,13 +169,14 @@ img {
 
     margin: 0 auto;
 
-    background: #000;
+    background: #000000;
 
     border-radius: 14px;
 
     overflow: hidden;
 
-    box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.18);
 }
 
 .video-box iframe {
@@ -187,7 +194,7 @@ img {
 
 
 /* =====================================================
-   WEBSITE BUTTON
+   VISIT WEBSITE BUTTON
 ===================================================== */
 
 .button-group {
@@ -207,21 +214,22 @@ img {
 
     justify-content: center;
 
-    padding: 15px 28px;
+    padding: 15px 30px;
 
     background: #147a49;
 
     color: #ffffff;
 
-    border-radius: 9px;
-
     text-decoration: none;
+
+    border-radius: 9px;
 
     font-size: 17px;
 
     font-weight: 700;
 
-    box-shadow: 0 4px 12px rgba(20,122,73,0.25);
+    box-shadow:
+        0 4px 12px rgba(20,122,73,0.25);
 
     transition: 0.2s;
 }
@@ -280,8 +288,6 @@ img {
 
     color: #a45a00;
 
-    font-size: 16px;
-
     font-weight: 800;
 
     letter-spacing: 1px;
@@ -314,7 +320,8 @@ img {
 
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
 
     gap: 20px;
 }
@@ -353,7 +360,7 @@ img {
 
 .notice {
 
-    max-width: 900px;
+    max-width: 950px;
 
     margin: 25px auto 0;
 
@@ -368,102 +375,226 @@ img {
 
 
 /* =====================================================
-   IMAGE SECTION
+   BUSINESS IMAGE SECTION
 ===================================================== */
 
 .products {
 
     background: #f5fbff;
 
-    padding: 45px 20px;
+    padding: 50px 20px;
 }
 
 
 /*
-    IMPORTANT:
+   IMPORTANT:
 
-    We do NOT use:
+   Images are NOT given a fixed height.
 
-    height: 400px;
-    object-fit: cover;
-    aspect-ratio: 4/3;
-
-    because these would crop your original images.
-
-    Instead:
-    width: 100%;
-    height: auto;
-
-    This displays the COMPLETE IMAGE.
+   This means:
+   - Complete image visible
+   - No cropping
+   - No stretching
+   - Original proportions preserved
 */
 
 
-.image-gallery {
+.business-layout {
 
     display: grid;
 
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns:
+        minmax(0, 1.25fr)
+        minmax(0, 0.75fr);
 
-    gap: 24px;
+    gap: 25px;
 
     align-items: start;
 }
 
 
-/* IMAGE CARD */
+/* =====================================================
+   IMAGE 1
+===================================================== */
 
-.image-card {
-
-    width: 100%;
+.main-image-card {
 
     background: #ffffff;
 
-    padding: 8px;
+    padding: 10px;
 
-    border-radius: 14px;
+    border-radius: 16px;
 
     box-shadow:
-        0 4px 18px rgba(0,0,0,0.12);
+        0 5px 20px rgba(0,0,0,0.12);
 
     overflow: hidden;
 }
 
-
-/* FULL IMAGE */
-
-.image-card img {
-
-    display: block;
-
-    width: 100%;
-
-    height: auto;
-
-    max-width: 100%;
-
-    border-radius: 8px;
-
-    /*
-       Do not use object-fit: cover.
-       This preserves the complete image.
-    */
-}
-
-
-/* =====================================================
-   IMAGE FULLSCREEN VIEW
-===================================================== */
-
-.image-card a {
+.main-image-card a {
 
     display: block;
 
     cursor: zoom-in;
 }
 
+.main-image-card img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 10px;
+}
+
 
 /* =====================================================
-   CONTACT
+   RIGHT SIDE
+===================================================== */
+
+.right-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* =====================================================
+   IMAGE 2
+===================================================== */
+
+.second-image-card {
+
+    background: #ffffff;
+
+    padding: 10px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.12);
+
+    overflow: hidden;
+}
+
+.second-image-card a {
+
+    display: block;
+
+    cursor: zoom-in;
+}
+
+.second-image-card img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   CONTACT CARD
+
+   This uses the available right-side space instead
+   of leaving it empty.
+===================================================== */
+
+.business-contact-card {
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.10);
+}
+
+.business-contact-card h3 {
+
+    margin: 0 0 15px;
+
+    color: #147a49;
+
+    font-size: 23px;
+}
+
+.contact-detail {
+
+    margin: 10px 0;
+
+    font-size: 15px;
+}
+
+.contact-detail strong {
+
+    color: #153f7a;
+}
+
+.contact-detail a {
+
+    color: #147a49;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   CONTACT BUTTONS IN CARD
+===================================================== */
+
+.card-buttons {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+.card-button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    background: #147a49;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+.card-button:hover {
+
+    background: #0d6139;
+}
+
+
+/* =====================================================
+   CONTACT SECTION
 ===================================================== */
 
 .contact {
@@ -488,9 +619,6 @@ img {
 
     color: #5d6670;
 }
-
-
-/* CONTACT BUTTONS */
 
 .contact-buttons {
 
@@ -557,35 +685,29 @@ img {
    TABLET
 ===================================================== */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
-    .nav {
-        display: none;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .hero h2 {
-        font-size: 21px;
-    }
-
-    .info-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /*
-       Tablet:
-       Show images one below another.
-    */
-
-    .image-gallery {
+    .business-layout {
 
         grid-template-columns: 1fr;
 
-        gap: 20px;
     }
+
+    .right-column {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        align-items: start;
+    }
+
+    .business-contact-card {
+
+        grid-column: span 1;
+    }
+
 }
 
 
@@ -596,11 +718,15 @@ img {
 @media (max-width: 600px) {
 
     body {
+
         font-size: 15px;
     }
 
+
     .container {
+
         padding-left: 12px;
+
         padding-right: 12px;
     }
 
@@ -608,33 +734,45 @@ img {
     /* HEADER */
 
     .header-inner {
+
         min-height: 58px;
     }
 
     .logo {
+
         font-size: 19px;
+    }
+
+    .nav {
+
+        display: none;
     }
 
 
     /* VIDEO */
 
     .video-section {
+
         padding: 30px 12px;
     }
 
     .video-section h2 {
+
         font-size: 23px;
+
         line-height: 1.3;
     }
 
     .video-box {
+
         border-radius: 10px;
     }
 
 
-    /* WEBSITE BUTTON */
+    /* VISIT BUTTON */
 
     .button-group {
+
         width: 100%;
     }
 
@@ -642,9 +780,9 @@ img {
 
         width: 100%;
 
-        padding: 15px 18px;
-
         font-size: 16px;
+
+        padding: 15px 18px;
     }
 
 
@@ -658,15 +796,11 @@ img {
     .hero h1 {
 
         font-size: 30px;
-
-        line-height: 1.2;
     }
 
     .hero h2 {
 
         font-size: 19px;
-
-        line-height: 1.4;
     }
 
 
@@ -695,25 +829,26 @@ img {
     }
 
 
-    /* IMAGES */
+    /* BUSINESS IMAGES */
 
     .products {
 
         padding: 35px 10px;
     }
 
-    .image-gallery {
+    .business-layout {
 
         display: flex;
 
         flex-direction: column;
 
-        gap: 18px;
-
         width: 100%;
+
+        gap: 18px;
     }
 
-    .image-card {
+
+    .main-image-card {
 
         width: 100%;
 
@@ -722,15 +857,56 @@ img {
         border-radius: 10px;
     }
 
-    .image-card img {
+    .main-image-card img {
 
         width: 100%;
 
         height: auto;
 
-        display: block;
+        border-radius: 7px;
+    }
+
+
+    .right-column {
+
+        display: flex;
+
+        flex-direction: column;
+
+        width: 100%;
+
+        gap: 18px;
+    }
+
+
+    .second-image-card {
+
+        width: 100%;
+
+        padding: 5px;
+
+        border-radius: 10px;
+    }
+
+    .second-image-card img {
+
+        width: 100%;
+
+        height: auto;
 
         border-radius: 7px;
+    }
+
+
+    /* CONTACT CARD */
+
+    .business-contact-card {
+
+        width: 100%;
+
+        padding: 20px;
+
+        border-radius: 12px;
     }
 
 
@@ -772,21 +948,19 @@ img {
 
 
 /* =====================================================
-   VERY SMALL MOBILE
+   SMALL MOBILE
 ===================================================== */
 
 @media (max-width: 380px) {
 
     .hero h1 {
+
         font-size: 27px;
     }
 
     .hero h2 {
-        font-size: 17px;
-    }
 
-    .video-section h2 {
-        font-size: 21px;
+        font-size: 17px;
     }
 
 }
@@ -848,6 +1022,7 @@ img {
         Welcome to Sukhada Raut Foods
     </h2>
 
+
     <p>
         Discover our natural frozen coconut products.
     </p>
@@ -865,7 +1040,9 @@ img {
 
 
     <!--
-       CHANGE THIS URL TO YOUR ACTUAL LIVE WEBSITE URL
+        IMPORTANT:
+        Replace the URL below with your confirmed
+        GitHub Pages website URL if different.
     -->
 
     <div class="button-group">
@@ -1036,7 +1213,7 @@ img {
 
 
 <!-- =====================================================
-     FULL IMAGES
+     BUSINESS IMAGES
 ===================================================== -->
 
 <section
@@ -1045,47 +1222,177 @@ img {
 
     <div class="container">
 
+
         <h2 class="section-title">
             Our Products & Business
         </h2>
 
 
-        <div class="image-gallery">
+        <div class="business-layout">
 
 
-            <!-- IMAGE 1 -->
+            <!-- =================================================
+                 LARGE IMAGE 1
+            ================================================== -->
 
-            <div class="image-card">
+            <div class="main-image-card">
 
                 <a
                     href="image1.jpg"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener">
 
                     <img
                         src="image1.jpg"
-                        alt="Sukhada Raut Foods - Fresh Frozen Grated Coconut">
+                        alt="Sukhada Raut Foods Fresh Grated Coconut">
 
                 </a>
 
             </div>
 
 
-            <!-- IMAGE 2 -->
 
-            <div class="image-card">
+            <!-- =================================================
+                 RIGHT COLUMN
+            ================================================== -->
 
-                <a
-                    href="image2.jpg"
-                    target="_blank">
+            <div class="right-column">
 
-                    <img
-                        src="image2.jpg"
-                        alt="Sukhada Raut Foods - Coconut Food Processing">
 
-                </a>
+                <!-- IMAGE 2 -->
+
+                <div class="second-image-card">
+
+                    <a
+                        href="image2.jpg"
+                        target="_blank"
+                        rel="noopener">
+
+                        <img
+                            src="image2.jpg"
+                            alt="Sukhada Raut Foods Coconut Food Processing">
+
+                    </a>
+
+                </div>
+
+
+                <!-- =================================================
+                     CONTACT INFORMATION
+
+                     This uses the remaining right-side space.
+                ================================================== -->
+
+                <div class="business-contact-card">
+
+                    <h3>
+                        Sukhada Raut Foods
+                    </h3>
+
+
+                    <div class="contact-detail">
+
+                        <strong>
+                            📍 Address
+                        </strong>
+
+                        <br>
+
+                        H. No. 189/4,
+                        Madhalawada,
+                        Village Sal,
+                        Bicholim,
+                        North Goa
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <strong>
+                            📞 Phone
+                        </strong>
+
+                        <br>
+
+                        <a href="tel:8262015291">
+                            8262015291
+                        </a>
+
+                        <br>
+
+                        <a href="tel:7498713503">
+                            7498713503
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <strong>
+                            ✉️ Email
+                        </strong>
+
+                        <br>
+
+                        <a href="mailto:dev.raut8585@gmail.com">
+                            dev.raut8585@gmail.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <strong>
+                            FSSAI
+                        </strong>
+
+                        <br>
+
+                        206230020000090
+
+                    </div>
+
+
+                    <div class="contact-detail">
+
+                        <strong>
+                            GSTIN
+                        </strong>
+
+                        <br>
+
+                        30DBTPR2934F2ZH
+
+                    </div>
+
+
+                    <div class="card-buttons">
+
+                        <a
+                            class="card-button"
+                            href="tel:8262015291">
+
+                            📞 Call Now
+
+                        </a>
+
+
+                        <a
+                            class="card-button"
+                            href="mailto:dev.raut8585@gmail.com">
+
+                            ✉️ Send Email
+
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
-
 
         </div>
 
@@ -1108,6 +1415,7 @@ img {
         <h2>
             Contact Sukhada Raut Foods
         </h2>
+
 
         <p>
             For product enquiries and business enquiries,
@@ -1140,7 +1448,7 @@ img {
                 class="contact-btn"
                 href="mailto:dev.raut8585@gmail.com">
 
-                ✉️ Email Us
+                ✉️ dev.raut8585@gmail.com
 
             </a>
 
@@ -1160,19 +1468,27 @@ img {
 <footer class="footer">
 
     <p>
+
         <strong>
             Sukhada Raut Foods
         </strong>
+
     </p>
 
+
     <p>
+
         Fresh Frozen Grated Coconut
         • 100% Natural
+
     </p>
 
+
     <p>
+
         © 2026 Sukhada Raut Foods.
         All Rights Reserved.
+
     </p>
 
 </footer>
